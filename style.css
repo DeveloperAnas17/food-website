@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+/******** Header Start *****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.logo {
+    height: 80px;
+    width: 130px;
+}
+
+#menu {
+    flex: 2;
+    margin-right: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+}
+
+.order {
+    background: green;
+    color: white;
+    padding: 10px 30px;
+}
+
+ /************  Header Ending  *************/
+
+/*********** Banner Section ************/
+
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.233)), url('./img/banner.jpg');
+    background-repeat: no-repeat;
+    margin-top: -14vh;
+    width: 1349px;
+    height: 964px;
+    object-fit: cover;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+.inner {
+    margin: 40vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation h1 {
+    font-size: 176px;
+    text-align: center;
+    color: white;
+}
+
+.presentation p {
+    color: white;
+    font-size: 2em;
+    width: 900px;
+    text-align: center;
+}
