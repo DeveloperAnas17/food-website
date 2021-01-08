@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /******** Header Start *****/
@@ -71,11 +71,10 @@ header {
     url("./img/banner.jpg");
   background-repeat: no-repeat;
   position: relative;
-  bottom: 14vh;
-  width: 1349px;
+  bottom: 15vh;
+  width: 100%;
   height: 964px;
   object-fit: cover;
-  vertical-align: baseline;
   overflow: hidden;
 }
 
@@ -105,11 +104,11 @@ header {
 /*************Section Wrapper********* */
 
 .wrapper {
-  width: 1349px;
+  width: 100%;
   height: 819px;
   background-color: #ffbd14;
   position: relative;
-  bottom: 14vh;
+  bottom: 15vh;
 }
 
 .card-container {
@@ -180,3 +179,165 @@ header {
   background: #10846f;
   color: white;
 }
+
+/* **********Section Product********* */
+
+.product-container {
+  background: white;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  bottom: 15vh;
+  z-index: 1000;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product {
+  padding: 50px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-row img {
+  margin: 30px;
+  height: 230px;
+  width: 230px;
+  transition: 20ms ease-in;
+}
+
+.product-row img:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+/* ************Section Product Ending *********** */
+
+
+/************************Big Beach **********************/
+
+.big-beach {
+  height: 917px;
+  width: 100%;
+  background-image: url("./img/big-beach.jpg");
+  background-color: lightblue;
+  display: flex;
+  position: relative;
+  bottom: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.beach-card {
+  background-color: white;
+  border: 3px #e8e6e6 solid;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 461px;
+  height: 287px;
+}
+
+.beach-card h2 {
+  color: #10846f;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.beach-card p {
+  line-height: 1.6em;
+  text-align: center;
+  font-size: 15px;
+  color: #10846f;
+  margin: 20px;
+}
+
+.find-out {
+  width: 142px;
+  background: white;
+  color: #10846f;
+  font-size: 15px;
+  height: 40px;
+  border: 1px #10846f solid;
+  padding: 10px 20px;
+}
+
+.find-out:hover {
+  background: #10846f;
+  color: white;
+}
+
+/* *************Big Beach Ending************* */
+
+#footer {
+  background-color: #ffdeea;
+  position: relative;
+  bottom: 15vh;
+  overflow: none;
+  flex: 1;
+  object-fit: contain;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-card {
+  background-color: white;
+  width: 1185px;
+  height: 320px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: #10846f;
+}
+
+.left h4 {
+  font-weight: lighter;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: #10846f;
+}
+
+.center h2 {
+  margin: 20px;
+}
+.center p {
+  margin: 20px;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: #10846f;
+}
+
+
