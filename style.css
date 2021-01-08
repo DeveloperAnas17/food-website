@@ -1,94 +1,182 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-    font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 /******** Header Start *****/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-container {
-    flex: 1;
-    margin-left: 40px;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .logo {
-    height: 80px;
-    width: 130px;
+  height: 80px;
+  width: 130px;
 }
 
 #menu {
-    flex: 2;
-    margin-right: 40px;
+  flex: 2;
+  margin-right: 40px;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: lighter;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #e8e6e6;
+  font-weight: lighter;
+}
+.nav-link:hover {
+  color: #10846f;
 }
 
 .order {
-    background: green;
-    color: white;
-    padding: 10px 30px;
+  background: #10846f;
+  color: #e8e6e6;
+  padding: 10px 30px;
+}
+.order:hover {
+  background: #e8e6e6;
+  color: #10846f;
 }
 
- /************  Header Ending  *************/
+/************  Header Ending  *************/
 
 /*********** Banner Section ************/
 
-
 #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.233)), url('./img/banner.jpg');
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 14vh;
-    width: 1349px;
-    height: 964px;
-    object-fit: cover;
-    vertical-align: baseline;
-    overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.233)),
+    url("./img/banner.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 14vh;
+  width: 1349px;
+  height: 964px;
+  object-fit: cover;
+  vertical-align: baseline;
+  overflow: hidden;
 }
 
 .inner {
-    margin: 40vh auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 40vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .presentation h1 {
-    font-size: 176px;
-    text-align: center;
-    color: white;
+  font-size: 176px;
+  text-align: center;
+  color: #e8e6e6;
 }
 
 .presentation p {
-    color: white;
-    font-size: 2em;
-    width: 900px;
-    text-align: center;
+  color: #e8e6e6;
+  font-size: 2em;
+  width: 900px;
+  text-align: center;
+}
+
+/* **************Main*********** */
+
+/*************Section Wrapper********* */
+
+.wrapper {
+  width: 1349px;
+  height: 819px;
+  background-color: #ffbd14;
+  position: relative;
+  bottom: 14vh;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  padding-left: 15vh;
+  width: 80%;
+}
+
+.card-container > img {
+  background: #ffffff;
+  padding: 8px;
+  width: 411px;
+  height: 550px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.card {
+  width: 622px;
+  height: 414px;
+  background: #ffffff;
+  position: relative;
+  right: 55vh;
+  padding: 30px;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #10846f;
+}
+
+.card-text {
+  display: flex;
+  margin-top: 40px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text p {
+  line-height: 1.9em;
+  color: #10846f;
+  font-weight: lighter;
+  font-size: 15px;
+  width: 212px;
+  height: 168px;
+}
+
+.card-btn {
+  border: 1px #10846f solid;
+  background: white;
+  color: #10846f;
+  width: 142px;
+  height: 40px;
+  position: relative;
+  margin: 76px 0px 10px 0;
+  right: 60px;
+  align-self: start;
+}
+
+.card-btn:hover {
+  background: #10846f;
+  color: white;
 }
