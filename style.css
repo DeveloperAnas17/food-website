@@ -63,7 +63,8 @@ header {
 #banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.233)), url('./img/banner.jpg');
     background-repeat: no-repeat;
-    margin-top: -14vh;
+    position: relative;
+    bottom: 14vh;
     width: 1349px;
     height: 964px;
     object-fit: cover;
